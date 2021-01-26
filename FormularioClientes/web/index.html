@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="cliente.css">       
+         <script src="app.js" type="text/javascript"></script>    
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="d-flex justify-content-between">
+            <div class="d-flex justify-content-start  mb-3 ">
+                <a href="" class="btn btn-light  "> Volver </a>
+            </div>
+            <h1 class="titulo display-4 "> REGISTRAR CLIENTE </h1>
+            <form class="form-inline my-2 my-lg-0 ">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            </form>
+        </header>
+
+
+        <div class="padre d-flex justify-content-between">
+             <div class=" img hijo">
+                    <img class="img-fluid  border-right border-primary" src=" cliente.png " >
+                </div> 
+
+            <div class=" row hijo">
+
+                <div class="col-12 ">
+                    <form>                            
+                        <div class="form-group row" >
+                            <label class="col-4 col-form-label "> Documento de Identidad: </label><br>
+                            <input type="text"  id="documento" name="documento"  class="col-8 " maxlength="12"  minlegth="2" required autofocus > <br> <br>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label ">Nombres : </label><br><br>
+                            <input type="text"  name="nombres" id="nombres" class="col-8 "   maxlength="50"  minlegth="2" required > <br> <br>
+                        </div>
+                        <div class="form-group row" >
+                            <label class="col-4  col-form-label ">Apellidos: </label><br><br>
+                            <input type="text"  name="apellidos" id="apellidos" class="col-8 " maxlength="60"  minlegth="2" required> <br> <br>
+                        </div>
+                        <div class="form-group row" >
+                            <label class="col-4 col-form-label "> Telefono : </label><br><br>
+                            <input type="text"  name="telefono" id="telefono" class="col-8 " maxlength="60"  minlegth="2" required > <br> <br>
+                        </div>
+                        <div class="form-group row" >
+                            <label class="col-4 col-form-label ">Correo: </label><br><br>
+                            <input type="email"  name="correo" id="correo" class="col-8 " maxlength="20"  minlegth="2" required> <br> <br>
+                        </div>
+                        <div class="form-group row" >
+                            <label class="col-4 col-form-label "> Dirección: </label><br><br>
+                            <input type="text"  name="direccion" id="direccion" class="col-8 " maxlength="45"  minlegth="2" required > <br> <br>
+                        </div>
+                        <div class="form-group row" >
+                            <label class="col-4 col-form-label " for="departamento"> Departamento: </label><br>
+                            <input type="text" name="departamento" id="departamento" class="col-8 " maxlength="45"  minlegth="2" required > <br> <br>
+                        </div> 
+
+                        <div class="form-group row" >
+                            <label class="col-4 col-form-label " for="municipio">Municipio: </label><br>
+                            <input type="text" name="municipio" id="municipio" class="col-8 " maxlength="45"  minlegth="2" required > <br> <br>
+                        </div>                 
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+                     <div class="form-group justify-content-center inline row ">
+                            <button type="button" name="guardar" id="guardar" value="guardar" class="btn btn-primary col-2 rounded-pill" >GUARDAR</button>
+                            <button type="button" name="eliminar"  id="eliminar" value="eliminar" class="btn btn-primary col-2 rounded-pill"> ELIMINAR</button>
+                            <button type="button" name="mostrar" id="mostrar" value="mostrar" class="btn btn-primary col-2 rounded-pill" >MOSTRAR</button>
+                             <button type="button" name="actualizar" id="actualizar" value="actualizar" class="btn btn-primary col-2 rounded-pill" >ACTUALIZAR</button>
+                        <button type="button" name="mostrarTODO" id="mostrarTODO" value="mostrarTODO" class="btn btn-primary col-2 rounded-pill" >MOSTRAR TODO</button>
+                        </div>
+        <div id="tabla">
+           
+        </div>
+    </body>
+</html>
